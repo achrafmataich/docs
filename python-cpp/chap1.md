@@ -5,7 +5,6 @@
 - [Table of content](#table-of-content)
 - [Introduction](#introduction)
 - [Using __ctypes__ library for python](#using-ctypes-library-for-python)
-  - [Installing ctypes library](#installing-ctypes-library)
   - [Creating C++ file](#creating-c-file)
   - [Compiling C++ file to be a shared C++ file](#compiling-c-file-to-be-a-shared-c-file)
   - [Use it inside python](#use-it-inside-python)
@@ -20,12 +19,6 @@ When it came to fast-processing data, the best way to do so is to use a compiled
 ## Using __ctypes__ library for python 
 
 __ctypes__ is a python library that handles the import and the use of C/C++ functions and classes inside python code.
-
-### Installing ctypes library
-
-```ps
-pip install ctypes
-```
 
 ### Creating C++ file
 
