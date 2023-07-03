@@ -1,6 +1,6 @@
 **Chapter 1 : Use The power of C++ in Python**
 
-## Table of content
+# Table of content
 
 - [Table of content](#table-of-content)
 - [Introduction](#introduction)
@@ -10,17 +10,17 @@
   - [Use it inside python](#use-it-inside-python)
   - [Execution](#execution)
 
-## Introduction
+# Introduction
 
 Python is known to be a slow language.  
 When it came to fast-processing data, the best way to do so is to use a compiled programming language like **C/C++**.  
 >_But what if we use  both the performance of C/C++ and the simplicity of Python?_
 
-## Using __ctypes__ library for python 
+# Using __ctypes__ library for python 
 
 __ctypes__ is a python library that handles the import and the use of C/C++ functions and classes inside python code.
 
-### Creating C++ file
+## Creating C++ file
 
 ```cpp
 #include <iostream>
@@ -69,13 +69,13 @@ void sayHello()
 
 This function say hello by printing it to the standard output.
 
-### Compiling C++ file to be a shared C++ file
+## Compiling C++ file to be a shared C++ file
 
-```ps
+```bash
 g++ -fPIC -shared -o mylib.so mylib.cpp
 ```
 
-### Use it inside python
+## Use it inside python
 
 ```python
 import ctypes
@@ -85,7 +85,7 @@ c_lib_handler = ctypes.CDLL("mylib.so")
 c_lib_handler.sayHello()
 ```
 
-### Execution
+## Execution
 
 When the python file is executed it shows this output
 
